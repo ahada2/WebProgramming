@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+  <title>XHTML Form Example</title>
+
+  <script type="text/javascript" src="InClassForm.js">
+  </script>
+
+  <style type="text/css">
+    .mandatory { color: red }
+  </style>
+</head>
+
+<body>
+<h1>Sign Up Now!</h1>
+<form method="post"
+      id="signup_form"
+      onsubmit="checkCompleteness();">
+<p>
+<span class="mandatory">*</span><label id="name_label" for="visitor_id">ID:</label>
+ <input id="visitor_id" name="visitor_id" type="text" /></p>
+<p>
+<span class="mandatory">*</span><label id="pass1_label" for="firstname">FirstName:</label>
+ <input id="firstname" name="firstname" type="text" /></p>
+<p>
+<span class="mandatory">*</span><label id="pass2_label" for="lastname">LastName:</label>
+ <input id="lastname" name="lastname" type="text" /></p>
+
+<p>
+<input type="submit" value="Add" />
+</form>
+</body>
+</html>
